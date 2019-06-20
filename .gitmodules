@@ -1,0 +1,4 @@
+[submodule "src/cryptoauthlib"]
+	path = src/cryptoauthlib
+	url = https://github.com/MicrochipTech/cryptoauthlib.git
+
