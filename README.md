@@ -1,4 +1,4 @@
-# ECC608-mqtts-Azureiot-pubsub
+# ECC608-mqtts-AzureIoT-Connect
 
 This publishies and subscribes Azure IoT hub with IO protection for ECDH premaster secret transmission, which is provided by ATECC608 capability.
 
