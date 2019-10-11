@@ -1,13 +1,13 @@
 # ECC608-mqtts-AzureIoT-Connect
 
-This publishies and subscribes Azure IoT hub with IO protection for ECDH premaster secret transmission, which is provided by ATECC608 capability.
+This publishies and subscribes Azure IoT hub with IO protection for ECDH premaster secret transmission, which is provided by ATECC608A capability.
 
 # Requirements
 
   Platformio with VS Code environment.
   install "Espressif 32" platform definition on Platformio  
   Prior to compile this project, you must run [ECC608-AzureDPS-Provision](https://github.com/kmwebnet/ECC608-AzureDPS-Provision) with success result.  
-  doing this, Azure IoT Hub connection URL that is needed to connect it will store in ATECC608 EEPROM.
+  doing this, Azure IoT Hub connection URL that is needed to connect it will store in ATECC608A EEPROM.
 
   you need to modify the definition and variables in main.c as follows:  
   ```
@@ -31,7 +31,7 @@ This publishies and subscribes Azure IoT hub with IO protection for ECDH premast
       I2C 1 SDA GPIO_NUM_21
       I2C 1 SCL GPIO_NUM_22
           
-  Microchip ATECC608(on I2C port 1)
+  Microchip ATECC608A(on I2C port 1)
 
 # Usage
 
