@@ -277,6 +277,9 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
     int msg_id;
     // your_context_t *context = event->context;
     switch (event->event_id) {
+	case MQTT_EVENT_BEFORE_CONNECT:
+            ESP_LOGI(TAG, "MQTT_EVENT_BEFORE_CONNECT");
+            break;
         case MQTT_EVENT_CONNECTED:
             ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
             msg_id = esp_mqtt_client_subscribe(client, (const char *)subtopic, 1);
