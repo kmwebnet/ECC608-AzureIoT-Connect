@@ -219,6 +219,12 @@ static int ssl_connect(transport_handle_t t, const char *host, int port, int tim
         printf("MBEDTLS_SSL_VERIFY_NONE\n");
     }
 
+    // Set the allowed curves in order of preference.
+    static const mbedtls_ecp_group_id curve[] =
+    {
+        MBEDTLS_ECP_DP_SECP256R1, MBEDTLS_ECP_DP_NONE
+    };
+    mbedtls_ssl_conf_curves(&ssl->conf, curve);
 
     mbedtls_ssl_conf_rng(&ssl->conf, mbedtls_ctr_drbg_random, &ssl->ctr_drbg);
 
