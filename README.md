@@ -17,7 +17,7 @@ This publishies and subscribes Azure IoT hub with IO protection for ECDH premast
 
   ```
 
-  and you need to replace "cert_chain.c" contents from [ECC608-AzureDPS-Provision](https://github.com/kmwebnet/ECC608-AzureDPS-Provision) with success result.   
+  and you need to place "cert_chain.c" contents from [ECC608-AzureDPS-Provision](https://github.com/kmwebnet/ECC608-AzureDPS-Provision) with success result.   
 
 # Environment reference
   
