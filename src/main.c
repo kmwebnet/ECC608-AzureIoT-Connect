@@ -499,7 +499,7 @@ printf("Serial Number Strings%s", tmpserial);
     serialstr[ATCA_SERIAL_NUM_SIZE * 2] = (int)0;
 
     char urlread [48] = {};
-    status = atcab_read_bytes_zone(ATCA_ZONE_DATA, 8 , 0 , (uint8_t *)urlread , 48 );
+    status = atcab_read_bytes_zone(ATCA_ZONE_DATA, 8 , 20 , (uint8_t *)urlread , 48 );
 
     if (status != ATCA_SUCCESS) {
 	printf("read azureiot hub URL to slot8 failed with ret=0x%08d/r/n", status);
